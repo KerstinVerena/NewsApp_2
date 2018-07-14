@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Enter your API key here! -->
+    <string name="api_key">THE API KEY</string>
+
+    <string name="app_name">News App</string>
+    <string name="no_data">No news available for the topic %1$s. Please try another search.</string>
+    <string name="no_connection">No news available. Please ensure that your device is connected
+        to the internet.</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+
+    <!-- Strings For Search Keyword Preference [CHAR LIMIT=30] -->
+    <string name="settings_keyword_label">Keyword</string>
+    <string name="settings_keyword_key" translatable="false">q</string>
+    <string name="settings_keyword_default" translatable="false">news</string>
+
+    <!-- Strings Order By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order by:</string>
+    <string name="settings_order_by_key" translatable="false">order-by</string>
+    <string name="settings_order_by_default" translatable="false">relevance</string>
+
+    <!-- Strings Order By Relevance [CHAR LIMIT=30] -->
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value" translatable="false">relevance</string>
+
+    <!-- Strings Order By Newest [CHAR LIMIT=30] -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <!-- Strings Order By Oldest [CHAR LIMIT=30] -->
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <!-- Remaining strings for setting up URL -->
+    <string name="url_show_fields" translatable="false">show-fields</string>
+    <string name="url_byline" translatable="false">byline</string>
+
+</resources>

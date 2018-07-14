@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">24sp</dimen>
+    <dimen name="generalPadding">16dp</dimen>
+    <dimen name="sectionTextSize">20sp</dimen>
+    <dimen name="itemTextMargin">2dp</dimen>
+    <dimen name="authorDateTextSize">18sp</dimen>
+    <dimen name="zeroDp">0dp</dimen>
+</resources>
