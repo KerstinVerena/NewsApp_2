@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity
                 // Convert the String URL into a URI object (to pass into the Intent constructor)
                 Uri newsUri = Uri.parse(clickedNews.getUrl());
 
-                // Create a new intent to view the earthquake URI
+                // Create a new intent to view the news URI
                 Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
 
                 // Start the intent to launch a new activity
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity
         getActiveNetworkInfo();
         if (getActiveNetworkInfo() != null
                 && getActiveNetworkInfo().isConnectedOrConnecting()) {
-            // Start the AsyncTask to fetch the earthquake data
+            // Start the AsyncTask to fetch the news data
             Log.i(LOG_TAG, "Loader Initiated");
 
             getLoaderManager().initLoader(NEWS_LOADER_ID, null, this);
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onLoadFinished(Loader<List<News>> loader, List<News> newsList) {
         Log.i(LOG_TAG, "Loader Finished");
-        //Clear the adapter of previous earthquake data
+        //Clear the adapter of old data
         newsAdapter.clear();
         loadingIndicator.setVisibility(View.GONE);
         String wrongKey = getString(R.string.no_data, keyWordSearch);
