@@ -71,8 +71,9 @@ public class MainActivity extends AppCompatActivity
                 // Create a new intent to view the news URI
                 Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
 
-                // Start the intent to launch a new activity
-                startActivity(websiteIntent);
+                if (websiteIntent.resolveActivity(getPackageManager()) != null){
+                // Start the intent to open the webiste
+                startActivity(websiteIntent);    }
             }
         });
 
